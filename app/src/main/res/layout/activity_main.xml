@@ -7,7 +7,6 @@
     android:background="@color/background"
     tools:context=".MainActivity">
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,15 +25,16 @@
 
                 <ImageButton
                     android:id="@+id/imgBackBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
+                    android:scaleType="centerCrop"
                     android:background="@color/yellow"
-                    android:src="@drawable/back64" />
+                    android:src="@drawable/exit_128" />
 
                 <TextView
                     android:id="@+id/textView"
@@ -70,9 +70,38 @@
                     android:layout_height="300dp"
                     android:layout_margin="5dp"
                     android:scaleType="centerCrop"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewGuide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tap/Click the camera icon below to capture your ID"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:textColor="@color/black"/>
 
             </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/resultTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Result"
+                android:background="@drawable/custom_card_view"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/opensans_semibold"
+                android:textColor="@color/black"
+                android:visibility="gone"/>
 
         </LinearLayout>
 
@@ -87,18 +116,6 @@
         android:background="@color/dirty_yellow"
         android:gravity="center"
         android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tap/Click the camera to capture your ID"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:textSize="17sp"
-            android:fontFamily="@font/opensans_semibold"
-            android:textColor="@color/black"/>
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/getImageBtn"

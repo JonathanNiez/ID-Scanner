@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:gravity="center"
     android:orientation="vertical">
 
     <TextView
@@ -12,18 +14,18 @@
         android:text="Select an Option"
         android:padding="25dp"
         android:fontFamily="@font/opensans_semibold"
-        android:textSize="26dp"/>
+        android:textSize="26sp"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/openCameraBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/background"
         android:text="Open Camera"
         android:padding="25dp"
         android:textAllCaps="false"
         android:fontFamily="@font/opensans_semibold"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:textAlignment="textStart"
         android:drawableEnd="@drawable/camera"/>
 
@@ -31,12 +33,12 @@
         android:id="@+id/openGalleryBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/background"
         android:text="Open Gallery"
         android:padding="25dp"
         android:textAllCaps="false"
         android:fontFamily="@font/opensans_semibold"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:textAlignment="textStart"
         android:drawableEnd="@drawable/gallery"/>
 
@@ -49,7 +51,7 @@
         android:padding="25dp"
         android:textAllCaps="false"
         android:fontFamily="@font/opensans_semibold"
-        android:textSize="24dp"
+        android:textSize="24sp"
        />
 
 
